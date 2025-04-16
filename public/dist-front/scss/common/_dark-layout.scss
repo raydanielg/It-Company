@@ -1,0 +1,33 @@
+/* -------- Dark Theme Styling ---------- */
+.dark-layout {
+    background-color: var(--theme-color2) !important;
+    --sec-title-color: var(--theme-color-light);
+
+    .sticky-header .main-menu .navigation>li>a,
+    h1,h2,h3,h4,h5,h6 {
+        color: var(--theme-color-light);
+    }
+
+    .preloader{
+        background-color: var(--theme-color2);
+        &:after {
+            background-image: url(../images/logo.png);
+        }
+    }
+    .sticky-header{
+        background-color: var(--theme-color2);
+    }
+
+    .hidden-bar {
+        .upper-box {
+            border-bottom: 1px solid rgba(0, 0, 0, .10);
+        }
+        .social-links {
+            border-top: 1px solid rgba(0, 0, 0, .10);
+
+            li {
+                border-right: 1px solid rgba(0, 0, 0, .10);
+            }
+        }
+    }
+}

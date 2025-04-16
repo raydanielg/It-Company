@@ -1,0 +1,72 @@
+.error-page__inner {
+    position: relative;
+    display: block;
+    text-align: center;
+    .error-page__title-box {
+        position: relative;
+        display: block;
+    }
+    .error-page__title {
+        position: relative;
+        display: inline-block;
+        font-size: 280px;
+        line-height: 280px;
+        margin-bottom: 0;
+        color: var(--theme-color1);
+    }
+    .error-page__sub-title {
+        font-size: 40px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        line-height: 50px;
+        margin-top: -16px;
+    }
+    .error-page__text {
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .error-page__form {
+        position: relative;
+        display: block;
+        margin: 42px auto 20px;
+        input[type="search"] {
+            height: 60px;
+            width: 100%;
+            border: none;
+            outline: none;
+            background-color: #f5f5f5;
+            font-size: 14px;
+            color: #333;
+            padding-left: 50px;
+            padding-right: 75px;
+            border-radius: 7px;
+        }
+        button[type="submit"] {
+            background-color: transparent;
+            font-size: 22px;
+            position: absolute;
+            top: 0;
+            right: 0px;
+            bottom: 0;
+            width: 72px;
+            outline: none;
+            border: none;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            padding: 0;
+        }
+    }
+    .error-page__form-input {
+        position: relative;
+        display: block;
+        max-width: 570px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}

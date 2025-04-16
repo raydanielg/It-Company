@@ -1,0 +1,189 @@
+/*--------------------------------------------------------------
+# Project Details
+--------------------------------------------------------------*/
+.project-details__img {
+  position: relative;
+  display: block;
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+.project-details__content {
+  position: relative;
+  display: block;
+}
+.project-details__content-left {
+  position: relative;
+  display: block;
+  margin-top: 31px;
+}
+.project-details__content-right {
+  position: relative;
+  display: block;
+  margin-top: 40px;
+}
+.project-details__details-box {
+  position: relative;
+  background-color: var(--theme-color1);
+  padding: 40px 50px 30px;
+  z-index: 1;
+  margin-top: -140px;
+}
+.project-details__details-list {
+  position: relative;
+  display: block;
+  li {
+    position: relative;
+    display: block;
+  }
+  li+li {
+    margin-top: 24px;
+  }
+}
+.project-details__client {
+  margin: 0;
+}
+.project-details__name {
+  font-size: 18px;
+  line-height: 24px;
+}
+.project-details__social {
+  position: relative;
+  display: flex;
+  align-items: center;
+  a {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--theme-color2);
+    color: var(--text-color-bg-theme-color2);
+    font-size: 15px;
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    z-index: 1;
+    &:hover {
+      background-color: var(--theme-color1);
+      color: var(--text-color-bg-theme-color1);
+    }
+  }
+  a+a {
+    margin-left: 10px;
+  }
+}
+.project-details__pagination-box {
+  position: relative;
+  display: block;
+  text-align: center;
+  border-top: 1px solid #ece9e0;
+  border-bottom: 1px solid #ece9e0;
+  padding: 30px 0;
+  margin-top: 117px;
+}
+.project-details__pagination {
+  position: relative;
+  display: block;
+  li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    a {
+      font-size: 14px;
+      color: #757873;
+      font-weight: 400;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-transition: all 500ms ease;
+      transition: all 500ms ease;
+      &:hover {
+        color: var(--theme-color1);
+        i {
+          background-color: var(--theme-color2);
+          color: var(--text-color-bg-theme-color2);
+          border: 2px solid var(--theme-color2);
+        }
+      }
+    }
+    .content {
+      position: relative;
+      display: block;
+    }
+  }
+  li.next {
+    float: left;
+    position: relative;
+    i {
+      position: relative;
+      height: 52px;
+      width: 52px;
+      border: 2px solid var(--theme-color2);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: var(--theme-color2);
+      font-size: 16px;
+      -webkit-transition: all 500ms ease;
+      transition: all 500ms ease;
+      margin-right: 20px;
+      z-index: 1;
+    }
+    .content {
+      text-align: left;
+    }
+  }
+  li.previous {
+    position: relative;
+    float: right;
+    i {
+      position: relative;
+      height: 52px;
+      width: 52px;
+      border: 2px solid var(--theme-color2);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: var(--theme-color2);
+      font-size: 16px;
+      -webkit-transition: all 500ms ease;
+      transition: all 500ms ease;
+      margin-left: 20px;
+      z-index: 1;
+    }
+    .content {
+      text-align: right;
+    }
+  }
+}

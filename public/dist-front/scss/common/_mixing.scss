@@ -1,0 +1,169 @@
+// stylelint-disable property-disallowed-list
+@mixin transition($transition...) {
+  @if length($transition)==0 {
+    $transition: $transition-base;
+  }
+
+  @if length($transition)>1 {
+    @each $value in $transition {
+      @if $value ==null or $value ==none {
+        @warn "The keyword 'none' or 'null' must be used as a single argument.";
+      }
+    }
+  }
+
+  @if nth($transition, 1) !=null {
+    transition: $transition;
+  }
+}
+
+//Fonts And Text Styleing
+
+@mixin title-font {
+  font-family:  var(--title-font);
+}
+
+@mixin title-font-two{
+  font-family: var(--title-font-two);
+}
+
+@mixin text-font {
+  font-family: var(--text-font);
+}
+
+@mixin text-outline($color){
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: $color;
+}
+
+//Display Flex Misins
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin vertical-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// Overlay Misins
+
+@mixin overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+// ABsolute Elements Misins
+
+@mixin absolute {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@mixin absolute-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@mixin absolute-bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+@mixin absolute-bottom-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+// Background Misins
+@mixin background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@mixin Shadow {
+  box-shadow: 0 10px 60px rgba(0, 0, 0, .07);
+}
+
+@mixin text-gradient {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@mixin fade-out{
+  opacity: 0;
+  visibility: hidden;
+  transition: all 300ms ease;
+}
+
+@mixin fade-in{
+  opacity: 1;
+  visibility: visible;
+}
+
+//=============================================
+//    Responsive Mixins
+//==============================================
+
+// XX-Large devices (large desktops, less than 1920px)
+@mixin for-xxl {
+  @media only screen and (max-width: 1699px) {
+    @content;
+  }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin for-xl {
+  @media only screen and (max-width: 1400px) {
+    @content;
+  }
+}
+// Large devices (desktops, less than 1200px)
+@mixin for-lg {
+  @media only screen and (max-width: 1199px) {
+    @content;
+  }
+}
+// Medium devices (tablets, less than 1024px)
+@mixin for-md {
+  @media only screen and (max-width: 1023px) {
+    @content;
+  }
+}
+// Small devices (landscape phones, less than 768px)
+@mixin for-sm {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin for-xs {
+  @media only screen and (max-width: 576px) {
+    @content;
+  }
+}
+// XX-Small devices (Small phones, less than 424px)
+@mixin for-xxs {
+  @media only screen and (max-width: 424px) {
+    @content;
+  }
+}

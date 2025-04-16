@@ -1,0 +1,139 @@
+/*** 
+
+====================================================================
+    Banner Section
+====================================================================
+
+***/
+
+.banner-section {
+    position: relative;
+    overflow: hidden;
+    .slide-item {
+        position: relative;
+        min-height: 840px;
+        @include media-breakpoint-down(md){
+            min-height: auto
+        }
+        .bg-image {
+            @include overlay;
+            @include background;
+            &:before {
+                @include overlay;
+                @include background;
+                background-image: url(../images/main-slider/shape.png);
+                background-color: rgba(24,25,28,.70);
+                content: "";
+            }
+        }
+    }
+    .content-box {
+        position: relative;
+        padding: 300px 0 120px;
+        @include media-breakpoint-down(md){
+            padding: 200px 0 150px;
+            text-align: center;
+        }
+        .title{
+            font-size: 80px;
+            line-height: 90px;
+            color: var(--theme-color-light);
+            font-weight: 600;
+            letter-spacing: 0;
+            margin-bottom: 60px;
+            @include media-breakpoint-down(lg){
+                font-size: 72px;
+                line-height: 1.2em;
+            }
+            @include media-breakpoint-down(md){
+                font-size: 62px;
+            }
+            @include media-breakpoint-down(sm) {
+                font-size: 36px;
+                margin-bottom: 30px;
+            }
+        }
+        .btn-box{
+            .theme-btn{
+                margin: 0 5px;
+                @include media-breakpoint-down(sm) {
+                    font-size: 14px;
+                    line-height: 20px;
+                    padding: 14px 30px;
+                }
+            }
+        }
+        
+    }
+}
+
+/* Animate 1 */
+.owl-carousel{
+    .animate-7,
+    .animate-6,
+    .animate-5,
+    .animate-4,
+    .animate-3,
+    .animate-2,
+    .animate-1{
+        opacity: 0;
+        transform: translateY(100px);
+        transition: all 500ms ease;
+    }
+    .animate-x {
+        opacity: 0;
+        transform: translateX(100px);
+        transition: all 500ms ease;
+    }
+    
+    .active{
+        .animate-7,
+        .animate-6,
+        .animate-5,
+        .animate-4,
+        .animate-3,
+        .animate-2,
+        .animate-1 {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .animate-2 {
+            transition-delay: 300ms;
+        }
+        .animate-3 {
+            transition-delay: 600ms;
+        }
+        .animate-4 {
+            transition-delay: 900ms;
+        }
+        .animate-5 {
+            transition-delay: 1200ms;
+        }
+        .animate-6 {
+            transition-delay: 1500ms;
+        }
+        .animate-7 {
+            transition-delay: 1800ms;
+        }
+    }
+}
+
+
+.banner-carousel .owl-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0px auto 0;
+    height: 0;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    .owl-next, 
+    .owl-prev{margin-top: 10px;}
+    @include media-breakpoint-down(lg){
+        display: none;
+    }
+}

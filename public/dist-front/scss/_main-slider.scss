@@ -1,0 +1,76 @@
+/*** 
+
+====================================================================
+  Main Slider
+====================================================================
+
+***/
+
+.main-slider {
+  position: relative;
+  text-align: center;
+  h1{
+    position: relative;
+    display: block;
+    font-size: 100px;
+    line-height: 1em;
+    color: #ffffff;
+    letter-spacing: -.04em;
+    z-index: 3;
+    padding: 30px 0 0;
+    .selected{
+      position: relative;
+      &:after{
+        position: absolute;
+        left: -22px;
+        top: 12px;
+        width: 364px;
+        height: 117px;
+        background-image: url(../images/icons/icon-circle2.png);
+        content: "";
+      }
+      &:before{
+        position: absolute;
+        left: 10px;
+        top: -10px;
+        z-index: -1;
+        width: 364px;
+        height: 118px;
+        background-image: url(../images/icons/icon-circle3.png);
+        content: "";
+      }
+    }
+    @include media-breakpoint-down(xxl){
+      font-size: 80px;
+      padding-top: 0;
+      .selected{
+        &::before,
+        &:after{display: none;}
+      }
+    }
+    @include media-breakpoint-down(lg) {
+      font-size: 72px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 64px;
+    }
+    @include media-breakpoint-down(sm){
+      font-size: 52px;
+    }
+    @include for-xs {
+      font-size: 46px;
+    }
+    @include for-xxs{
+      font-size: 36px;
+    }
+  }
+  .theme-btn{
+    @include media-breakpoint-down(sm){
+      line-height: 20px;
+      padding: 10px 30px;
+    }
+  }
+}
+
+
+

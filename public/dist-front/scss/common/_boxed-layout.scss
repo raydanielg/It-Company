@@ -1,0 +1,247 @@
+/*
+ *	boxed-layout.scss
+ * -----------------------------------------------
+*/
+.tm-boxed-layout {
+	background-color: #444;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	&.layer-overlay:before {
+		z-index: -1;
+	}
+	
+	.page-wrapper{
+		margin: 0 auto;
+		overflow: hidden;
+		@media (min-width:1200px){
+			width: calc( 1140px + 30px );
+		}
+	}
+	.container {
+		.container {
+			width: 100%;
+		}
+		@media (min-width:1200px){
+			width: 1140px;
+		}
+	}
+	&.tm-container-970px {
+		.page-wrapper {
+			@media (min-width:1000px){
+				width: calc( 940px + 30px );
+			}
+		}
+		.container,
+		.container-fluid {
+			padding-left: 20px;
+			padding-right: 20px;
+			.container,
+			.container-fluid {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+	}
+	&.tm-container-1230px {
+		.page-wrapper {
+			@media (min-width:1300px){
+				width: calc( 1200px + 30px );
+			}
+		}
+		.container,
+		.container-fluid {
+			width: 100%;
+			padding-left: 20px;
+			padding-right: 20px;
+			.container,
+			.container-fluid {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+	}
+	&.tm-container-1300px {
+		.page-wrapper {
+			@media (min-width:1400px){
+				width: calc( 1260px + 40px );
+			}
+		}
+		.container,
+		.container-fluid {
+			width: 100%;
+			padding-left: 20px;
+			padding-right: 20px;
+			.container,
+			.container-fluid {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+	}
+	&.tm-container-1340px {
+		.page-wrapper {
+			@media (min-width:1400px){
+				width: calc( 1300px + 40px );
+			}
+		}
+		.container,
+		.container-fluid {
+			width: 100%;
+			padding-left: 20px;
+			padding-right: 20px;
+			.container,
+			.container-fluid {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+	}
+	&.tm-container-1440px {
+		.page-wrapper {
+			@media (min-width:1400px){
+				width: calc( 1400px + 40px );
+			}
+		}
+		.container,
+		.container-fluid {
+			width: 100%;
+			padding-left: 20px;
+			padding-right: 20px;
+			.container,
+			.container-fluid {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+	}
+	&.tm-container-1500px {
+		.page-wrapper {
+			@media (min-width:1560px){
+				width: calc( 1460px + 40px );
+			}
+		}
+		.container,
+		.container-fluid {
+			width: 100%;
+			padding-left: 20px;
+			padding-right: 20px;
+			.container,
+			.container-fluid {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+	}
+	&.tm-container-1600px {
+		.page-wrapper {
+			@media (min-width:1660px){
+				width: calc( 1560px + 40px );
+			}
+		}
+		.container,
+		.container-fluid {
+			width: 100%;
+			padding-left: 20px;
+			padding-right: 20px;
+			.container,
+			.container-fluid {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+	}
+	&.tm-container-100pr .page-wrapper {
+		width: 95%;
+		.container,
+		.container-fluid {
+			width: 100%;
+		}
+	}
+	
+	&.container-shadow .page-wrapper {
+		box-shadow: 0 0 25px 0 #777;
+	}
+
+	.header,
+	section,
+	.footer {
+		background-color: #fff;
+	}
+	.header {
+		.navbar-default {
+			background-color: #fff;
+			border-color: #fff;
+			padding: 0;
+
+			.navbar-nav {
+				> li {
+					> a {
+						padding: 30px 5px;
+					}	
+				}
+			}
+			.navbar-collapse {
+				background-color: #fff;
+				border-color: #fff;
+				margin-right: 30px;
+			}
+		}
+		#header-logo {
+			margin: 0;
+			padding-top: 27px;
+		}
+	}
+	.banner-section .slide-item {
+		min-height: 540px;
+	}
+	.banner-section .slide-item .content-box {
+		padding: 150px 0 220px;
+	}
+	.banner-section-two .content-box {
+		padding: 250px 0 150px;
+	}
+	.banner-section-three .content-box {
+		padding: 250px 0 150px;
+	}
+	.banner-section-four .content-box {
+		padding: 130px 0;
+	}
+
+}
+
+@media (max-width:1200px){
+	.tm-boxed-layout {
+		padding-top: 15px;
+		.header {
+			.navbar-default {
+				.navbar-nav {
+					> li {
+						> a {
+							padding: 10px;
+						}
+					}
+				}
+				.navbar-collapse {
+					margin-right: 15px;
+				}
+			}
+		}
+		.navbar-header {
+			padding: 15px 0;
+		}
+		.navbar-collapse {
+			.navbar-nav {
+				li {
+					a {
+						.caret {
+							margin-right: 0;
+						}
+					}	
+				}
+			}
+		}
+	}
+}

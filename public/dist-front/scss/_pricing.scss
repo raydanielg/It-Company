@@ -1,0 +1,184 @@
+/***
+
+==================================================================
+    Pricing Section
+==================================================================
+
+***/
+
+.pricing-section{
+    position: relative;
+    overflow: hidden;
+    padding: 120px 0 70px;
+    .content-column {
+        position: relative;
+        .inner-column {
+            position: relative;
+            padding-right: 70px;
+        }
+        .sec-title {
+            margin-bottom: 30px;
+        }
+        .info-box {
+            position: relative;
+            z-index: 9;
+            padding-left: 90px;
+            margin-bottom: 40px;
+            @media (max-width: 767.98px) {
+                padding-left: 0;
+            }
+            .icon {
+                @include absolute;
+                @include flex-center;
+                height: 58px;
+                width: 58px;
+                color: var(--theme-color1);
+                background-color: var(--bg-theme-color2);
+                border-radius: 50%;
+                @media (max-width: 767.98px) {
+                    position: relative;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .title {
+                color: var(--theme-color1);
+                margin-bottom: 20px;
+            }
+
+            .text {
+                letter-spacing: .01em;
+                transition: all 300ms ease;
+            }
+        }
+    }
+
+    .pricing-column{
+        position: relative;
+        .inner-column{
+            position: relative;
+            margin-left: -30px;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.pricing-block {
+    position: relative;
+    margin-bottom: 40px;
+    z-index: 2;
+    transition: all 300ms ease;
+    &.pull-left {
+        margin-left: -70px;
+        z-index: 1;
+        @media (max-width: 767.98px) {
+            margin-left: 0;
+        }
+    }
+    .inner-box {
+        position: relative;
+        padding: 58px 60px 60px;
+        background-color: var(--bg-theme-color2);
+        text-align: center;
+        transition: all 300ms ease;
+        max-width: 370px;
+        width: 100%;
+        &:before{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 286px;
+            height: 271px;
+            opacity: 0.5;
+            // background-image: url(../images/icons/dotted-map-3.png);
+            content: "";
+        }
+        &:hover{
+            .image img{
+                transform: rotate(180deg) scale(-1);
+            }
+        }
+    }
+    .image {
+        position: relative;
+        margin-bottom: 15px;
+        img{
+            transition: all 300ms ease;
+        }
+    }
+    .price-box {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(255,255,255, .20);
+        margin-bottom: 25px;
+        .price {
+            display: block;
+            font-size: 46px;
+            line-height: 1em;
+            font-weight: 700;
+            color: #fff;
+            sup {
+                font-size: 60%;
+            }
+        }
+        .validaty {
+            position: relative;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #fff;
+            letter-spacing: .1em; 
+            margin-left: 2px;
+            top: 3px;
+        }
+    }
+    .title {
+        position: relative;
+        display: block;
+        line-height: 1.2em;
+        color: #ffffff;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    .features {
+        position: relative;
+        margin-bottom: 35px;
+        li {
+            position: relative;
+            display: block;
+            font-size: 16px;
+            line-height: 26px;
+            color: #8c8f94;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+    }
+    .btn-box {
+        position: relative;
+    }
+
+    &.style-two{
+        .inner-box{
+            background-color: #fff;
+            box-shadow: 0 10px 60px rgba(0,0,0, .07);
+            padding: 38px 60px 40px;
+            &:before{
+                opacity: 0.4;
+            }
+        }
+        .price-box{
+            border-bottom: 1px solid #e6e8ed;
+            .validaty,
+            .price{
+                color: var(--theme-color1);
+            }
+        }
+        &:hover{
+            margin-left: 0;
+        }
+        
+    }
+}

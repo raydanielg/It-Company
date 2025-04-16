@@ -1,0 +1,78 @@
+.theme-btn{
+    display:inline-flex;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+    transition:all 0.3s ease;
+    @include title-font;
+    .btn-title {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+}
+
+/*Btn Style One*/
+.btn-style-one {
+    position: relative;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 20px 50px;
+    font-weight: 600;
+    overflow: hidden;    
+    z-index: 0;
+    color: var(--theme-color2);
+    background: var(--theme-color1);
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: auto;
+        width: 7px;
+        height: 100%;
+        background: var(--theme-color2);
+        transition: all 300ms ease;
+        opacity: .15;
+        content: "";
+        z-index: -1;
+    }
+    i{
+        position: relative;
+        top: 1px;
+        display: block;
+        margin-left: 10px;
+        transform: rotate(45deg);
+    }
+    &:hover:before {
+        width: 100%;
+        opacity: 1;
+    }
+    &:hover {
+        color: #ffffff;
+    }
+    &.dark-bg{
+        background-color: var(--theme-color2);
+        &::before{background-color: var(--bg-theme-color1);}
+    }
+    &.light-bg{
+        background-color: var(--theme-color-light);
+        color: var(--theme-color2);
+        &:hover{color: var(--theme-color-light);}
+        &::before{
+            background-color: var(--theme-color2);
+            opacity: .4;
+        }
+    }
+    &.hover-light{
+        &:hover{color: var(--theme-color2);}
+        &:before{background-color: var(--theme-color-light);}
+    }
+}
+
+
+
+.theme-btn.small{
+    padding: 10px 30px;
+    line-height: 20px;
+    font-size: 10px;
+}

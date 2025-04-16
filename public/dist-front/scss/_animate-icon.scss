@@ -1,0 +1,265 @@
+
+/*** 
+
+====================================================================
+  Anim Icons
+====================================================================
+
+***/
+
+.anim-icons {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+[text-split] {
+    opacity: 0;
+}
+
+.word {
+    overflow: hidden;
+    padding-bottom: 0.1em;
+    margin-bottom: -0.1em;
+    transform-origin: bottom;
+}
+
+.anim-icons.full-width {
+    max-width: 100%;
+}
+
+.anim-icons .icon {
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+.icon-circle{
+    height: 250px;
+    width: 250px;
+    background-image: url(../images/icons/icon-circle.png);
+}
+
+.icon-dots {
+    height: 385px;
+    width: 103px;
+    background-image: url(../images/icons/icon-dots.png);
+}
+
+.icon-dots2 {
+    height: 141px;
+    width: 145px;
+    background-image: url(../images/icons/icon-dots2.png);
+}
+
+.icon-line{
+    width: 105px;
+    height: 124px;
+    background-image: url(../images/icons/icon-line.png);
+}
+
+.icon-line2{
+    width: 107px;
+    height: 44px;
+    background-image: url(../images/icons/icon-line2.png);
+}
+
+.icon-line3{
+    width: 77px;
+    height: 103px;
+    background-image: url(../images/icons/icon-line3.png);
+}
+
+.icon-line4 {
+    width: 121px;
+    height: 160px;
+    background-image: url(../images/icons/icon-line4.png);
+}
+
+.icon-line5{
+    width: 415px;
+    height: 352px;
+    background-image: url(../images/icons/icon-line5.png);
+}
+
+.icon-arrow1{
+    width: 93px;
+    height: 97px;
+    background-image: url(../images/icons/icon-arrow1.png);
+}
+
+.icon-arrow2{
+    width: 108px;
+    height: 77px;
+    background-image: url(../images/icons/icon-arrow2.png);
+}
+
+.icon-arrow3{
+    width: 45px;
+    height: 62px;
+    background-image: url(../images/icons/icon-arrow3.png);
+}
+
+.icon-speaker{
+    width: 160px;
+    height: 277px;
+    background-image: url(../images/icons/icon-speaker.png);
+}
+
+.bounce-y{
+    animation: bounce-y 10s infinite linear;
+}
+
+.bounce-x{
+    animation: bounce-x 10s infinite linear;
+}
+
+.zoom-one{
+    animation: zoom-one 10s infinite linear;
+}
+
+.zoom-two{
+    animation: zoom-two 5s infinite linear;
+}
+
+@keyframes float{
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce-y {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce-x {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(30px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoom-one {
+    0% {
+        transform: scale(.95);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(.95);
+    }
+}
+
+@keyframes zoom-two {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.overlay-anim {
+    position: relative;
+    &:after {
+        background: rgba(255, 255, 255, 0.3);
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 0;
+        opacity: 1;
+        z-index: 9;
+        pointer-events: none;
+    }
+    &:hover{
+        &:after {
+            height: 100%;
+            opacity: 0;
+            transition: all 400ms linear;
+        }
+    }   
+}
+
+
+// Animated Moving Circles
+
+.circle {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    left: -10px;
+    top: -10px;
+    border-radius: 100%;
+    z-index: 1;
+    pointer-events: none;
+    z-index: 10000;
+    transform: scale(1);
+    @supports (mix-blend-mode: difference) {
+        background-color: white;
+        mix-blend-mode: difference;
+    }
+    @include for-md{
+        display: none !important;
+    }
+}
+
+.circle-follow {
+    position: fixed;
+    mix-blend-mode: difference;
+    width: 30px;
+    height: 30px;
+    left: -21px;
+    top: -21px;
+    border-radius: 100%;
+    z-index: 1;
+    user-select: none;
+    pointer-events: none;
+    z-index: 10000;
+    transform: scale(1);
+    @supports (mix-blend-mode: difference) {
+        border: 1px solid #fff;
+        mix-blend-mode: difference;
+    }
+    @include for-md {
+        display: none !important;
+    }
+}

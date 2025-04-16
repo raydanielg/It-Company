@@ -1,0 +1,193 @@
+/*** 
+
+====================================================================
+    Contact Section
+====================================================================
+
+***/
+
+.contact-section{
+    position: relative;
+    .anim-icons{
+        z-index: 3;
+        pointer-events: none;
+        .icon-line3{
+            left: 410px;
+            top: 30px;
+        }
+        .icon-arrow1{
+            left: -195px;
+            top: 230px;
+        }
+        .icon-arrow2{
+            top: 75px;
+            left: 680px;
+        }
+    }
+    .outer-box{
+        position: relative;
+        padding: 60px 60px;
+        @include media-breakpoint-down(md){
+            padding: 40px 20px 20px;
+        }
+        .sec-title{
+            margin-bottom: 40px;
+            .sub-title{
+                color: var(--theme-color2);
+            }
+            h2{
+                font-size: 40px;
+                &:before{
+                    background-color: #fff;
+                    top: 20px;
+                    left: 0px;
+                }
+            }
+        }
+        .contact-form{
+            padding: 60px 60px;
+            background-color: #fff;
+            max-width: 760px;
+            z-index: 2;
+            @include media-breakpoint-down(xl){
+                max-width: 100%;
+            }
+            @include media-breakpoint-down(md){
+                padding: 30px 20px;
+            }
+        }
+        .image{
+            position: absolute;
+            right: 5px;
+            bottom: 0;
+            margin-bottom: 0;
+            @include media-breakpoint-down(xl){
+                display: none;
+            }
+        }
+    }
+}
+
+.contact-form {
+    position: relative;
+    .row{
+        margin: 0 -10px;
+        >div{padding: 0 10px};
+    }
+    .form-group {
+        position: relative;
+        margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        label {
+            font-size: 16px;
+            line-height: 20px;
+            color: #ffffff;
+            font-weight: 500;
+            display: block;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            &.error {
+                display: block;
+                font-weight: 500;
+                font-size: 13px;
+                text-transform: capitalize;
+                line-height: 24px;
+                color: #ff0000;
+                margin-bottom: 0;
+            }
+        }
+        .select2-container--default .select2-selection--single,
+        input:not([type="submit"]),
+        textarea,
+        select {
+            position: relative;
+            display: block;
+            height: 60px;
+            width: 100%;
+            padding: 15px 30px;
+            font-size: 14px;
+            color: #717070;
+            line-height: 28px;
+            font-weight: 400;
+            background-color: #f6f6f6;
+            border: 1px solid transparent;
+            margin-bottom: 0;
+            transition: all 300ms ease;
+        }
+        ::-webkit-input-placeholder {color: #717070;}
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: var(--theme-color2);
+        }
+        textarea {
+            height: 100px;
+            resize: none;
+        }
+        input[type="submit"],
+        button {
+            @include media-breakpoint-down(lg){width: 100%;}
+        }
+    }
+}
+
+/*** 
+
+====================================================================
+    Contact Section Two
+====================================================================
+
+***/
+
+.contact-section-two{
+    position: relative;
+    padding: 120px 0 70px;
+    .form-column{
+        position: relative;
+        margin-bottom: 50px;
+        .inner-column{
+            padding-right: 30px;
+            @include media-breakpoint-down(lg){
+                padding-right: 0;
+            }
+        }
+    }
+
+    .image-box{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 46%;
+        height: 100%;
+        padding-left: 130px;
+        @include media-breakpoint-down(xl){
+            padding-left: 30PX;
+        }
+        @include media-breakpoint-down(lg){
+            display: none
+        }
+        .image{
+            position: relative;
+            margin-bottom: 0;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .image-overlay{
+            @include overlay;
+            @include background;
+            background-image: url(../images/icons/overlay2.png);
+            @include for-xxl{
+                left: 100px;
+            }
+            @include media-breakpoint-down(xl){
+                display: NONE;
+            }
+        }
+    }
+}

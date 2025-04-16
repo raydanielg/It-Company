@@ -1,0 +1,138 @@
+/***
+
+====================================================================
+    Projects Section
+====================================================================
+
+***/
+
+.projects-section {
+    position: relative;
+    padding: 120px 0 90px;
+    z-index: 3;
+    .outer-box{
+        margin: 0 -260px;
+        @include for-xxl{
+            margin: 0 -100px;   
+        }
+        @include media-breakpoint-down(xxl){
+            margin: 0;
+        }
+    }
+}
+
+.project-block {
+    position: relative;
+    margin-bottom: 30px;
+    .inner-box {
+        position: relative;
+        overflow: hidden;
+        &:hover {
+            .content-box{
+                opacity: 1;
+                left: 0;
+                visibility: visible;
+                .icon{
+                    opacity: 1;
+                    transform: translate(0);
+                    transition-delay: 300ms;
+                }
+                .cat{
+                    opacity: 1;
+                    transform: translate(0);
+                    transition-delay: 500ms;
+                }
+                .title{
+                    opacity: 1;
+                    transform: translate(0);
+                    transition-delay: 400ms;
+                }
+            }
+        }
+    }
+    .image-box {
+        position: relative;
+        overflow: hidden;
+        transition: all 300ms ease;
+        .image {
+            position: relative;
+            margin-bottom: 0px;
+            a {
+                display: block;
+                width: 100%;
+            }
+            img{
+                transition: all 300ms ease;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .content-box{
+        position: absolute;
+        left: -20px;
+        bottom: 0;
+        padding: 40px 40px 30px;
+        padding-left: 50px;
+        z-index: 3;
+        max-width: 280px;
+        min-height: 250px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 300ms ease;
+        &::before{
+            @include overlay;
+            left: -120px;
+            width: 400px;
+            content: "";
+            opacity: .9;
+            border-radius: 30px 90px 20px 30px;
+            transform: skew(-22deg);
+            background-color: var(--bg-theme-color1);
+        }
+        .icon{
+            position: relative;
+            display: block;
+            height: 48px;
+            width: 48px;
+            font-size: 16px;
+            color: var(--theme-color-light);
+            background-color: var(--theme-color2);
+            @include flex-center;
+            border-radius: 50%;
+            margin-bottom: 35px;
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: all 300ms ease;
+            &:hover{
+                background-color: var(--theme-color-light);
+                color: var(--theme-color2);
+            }
+        }
+        .cat{
+            position: relative;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: .05em;
+            color: var(--theme-color2);
+            display: block;
+            text-transform: uppercase;
+            margin-bottom: 2px;
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: all 300ms ease;
+        }
+        .title{
+            color: var(--theme-color2);
+            margin-bottom: 0;
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: all 300ms ease;
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+        
+    }
+}

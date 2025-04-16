@@ -1,0 +1,111 @@
+
+/*** 
+
+====================================================================
+    Fun Fact Section
+====================================================================
+
+***/
+
+.fun-fact-section{
+    position: relative;
+    padding: 120px 0 70px;
+    &.pull-up{
+        padding-top: 90px;
+        .bg{
+            height: auto;
+            bottom: 0;
+            top: -150px;
+        }
+    }
+    .fact-counter{
+        max-width: 1020px;
+        margin: 0 auto;
+    }
+}
+
+//Counter BLock
+.counter-block {
+    position: relative;
+    margin-bottom: 50px;
+    &:last-child{
+        .inner:before{display: none;}
+    }
+    .inner {
+        position: relative;
+        text-align: center;
+        &:before{
+            position: absolute;
+            right: -12px;
+            top: 0;
+            height: 100%;
+            width: 1px;
+            background-color: #d4d0e4;
+            opacity: .2;
+            content: "";
+        }
+        &:hover{
+            .icon-box{
+                i{
+                    transform: scale(-1) rotate(180deg);
+                }
+            }
+            .counter-title{
+                opacity: 1;
+            }
+        }
+    }
+    .icon-box{
+        position: relative;
+        @include flex-center;
+        height: 92px;
+        width: 92px;
+        font-size: 52px;
+        color: var(--theme-color2);
+        background-color: var(--bg-theme-color1);
+        border-radius: 50%;
+        margin: 0 auto 15px;
+        &:Before{
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            bottom: -5px;
+            left: -5px;
+            background-color: #efedf8;
+            opacity: .1;
+            content: "";
+            border-radius: 50%;
+        }
+        i{
+            position: relative;
+            display: block;
+            transition: all 300ms ease;
+        }
+    }
+    .count-box {
+        position: relative;
+        display: block;
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 1em;
+        transition: all 300ms ease;
+        color: #fff;
+        .count-text {
+            font-size: 60px;
+            font-weight: 600;
+            line-height: 1em;
+            transition: all 300ms ease;
+        }
+    }
+    .counter-title {
+        display: block;
+        font-size: 15px;
+        line-height: 24px;
+        color: var(--theme-color-light);
+        font-weight: 500;
+        margin-top: 15px;
+        margin-bottom: 0;
+        transition: all 300ms ease;
+    }
+}
+

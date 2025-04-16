@@ -1,0 +1,299 @@
+/***
+
+====================================================================
+    Why Choose Us
+====================================================================
+
+***/
+
+.why-choose-us{
+    position: relative;
+    padding: 120px 0 70px;
+    .icon-arrow1{
+        top: 450px;
+        left: -300px;
+        transform: rotate(-25deg);
+    }
+
+    .content-column{
+        position: relative;
+        margin-bottom: 50px;
+        z-index: 3;
+        .inner-column {
+            position: relative;
+            padding-right: 70px;
+            @include media-breakpoint-down(xl){
+                padding-right: 0;
+            }
+        }
+        .sec-title{
+            margin-bottom: 40px;
+            .other-title{
+                color: var(--theme-color1);
+                margin-top: 30px;
+                font-weight: 400;
+            }
+            .icon{
+                position: absolute;
+                right: -65px;
+                bottom: -20px;
+            }
+        }
+    }
+
+    .info-outer{
+        position: relative;
+        margin-right: -470px;
+        border: 10px solid var(--theme-color2);
+        background-color: #fff;
+        padding: 40px 40px 10px;
+        @include media-breakpoint-down(lg){
+            margin-right: 0;
+        }
+    }
+    .info-box{
+        position: relative;
+        margin-bottom: 30px;
+        .inner{
+            position: relative;
+            padding-left: 90px;
+            min-height: 70px;
+            display: flex;
+            justify-content: center;
+            flex-direction:column;
+            @include media-breakpoint-down(sm){
+                padding-left: 0;
+                text-align: center;
+                padding-bottom: 10px;
+            }
+            &:hover{
+                .icon{
+                    background-color: var(--theme-color2);
+                    color: var(--theme-color1);
+                }
+            }
+        }   
+        .icon{
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 70px;
+            width: 70px;
+            font-size: 32px;
+            background-color: var(--bg-theme-color1);
+            color: var(--theme-color2);
+            border-radius: 50%;
+            @include flex-center;
+            transition: all 300ms ease;
+            @include media-breakpoint-down(sm){
+                position: relative;
+                display: inline-flex;
+                margin: 0 auto 10px;
+            }
+        }
+        .title{
+            margin-bottom: 0;
+        }
+    }
+
+    .image-column{
+        position: relative;
+        margin-bottom: 50px;
+        .image-box{
+            position: relative;
+            .image{
+                margin-bottom: 0;
+                img{width: 100%;}
+            }
+        }
+        .rounded-text{
+            position: absolute;
+            left: -65px;
+            top: -65px;
+            @include media-breakpoint-down(xl){
+                display: none;
+            }
+            .letter{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                line-height: 1em;
+                font-size: 72px;
+                color: var(--theme-color2);
+                font-weight: 700;
+            }
+            img{
+                animation: fa-spin 30s infinite linear;
+            }
+        }
+    }
+}
+
+
+/***
+
+====================================================================
+    Why Choose Us Two
+====================================================================
+
+***/
+
+.why-choose-us-two{
+    position: relative;
+    background-color: #f2f3f6;
+    @include media-breakpoint-down(lg){
+        padding-bottom: 120px;
+    }
+    .icon-arrow1{
+        top: 470px;
+        left: -260px;
+    }
+
+    .content-column{
+        position: relative;
+        z-index: 3;
+        .inner-column {
+            position: relative;
+            padding: 120px 0 85px;
+        }
+        .sec-title{
+            margin-bottom: 40px;
+        }
+    }
+
+    .info-box{
+        position: relative;
+        margin-bottom: 35px;
+        .inner{
+            position: relative;
+            &:hover{
+                .icon{
+                    background-color: var(--theme-color2);
+                    color: var(--theme-color1);
+                }
+            }
+        }   
+        .icon{
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 70px;
+            width: 70px;
+            background-color: var(--theme-color-light);
+            color: var(--theme-color1);
+            font-size: 36px;
+            border-radius: 50%;
+            box-shadow: 0 10px 50px rgba(0,0,0,.10);
+            @include flex-center;
+            transition: all 300ms ease;
+            @include media-breakpoint-down(sm){
+                position: relative;
+                display: inline-flex;
+                margin: 0 auto 20px;
+            }
+        }
+        .title-box{
+            position: relative;
+            padding-left: 90px;
+            min-height: 70px;
+            display: flex;
+            justify-content: center;
+            flex-direction:column;
+            margin-bottom: 15px;
+            @include media-breakpoint-down(sm){
+                padding-left: 0;
+                text-align: center;
+                min-height: auto;
+            }
+        }
+        .title{
+            margin-bottom: 0;
+            @include media-breakpoint-down(sm){
+                br{display: none;}
+            }
+        }
+        .text{
+            line-height: 26px;
+            margin-bottom: 0;
+            @include media-breakpoint-down(sm){
+                text-align: center;
+            }
+        }
+    }
+
+    .image-column{
+        .inner-column{
+            position: relative;
+            height: 100%;
+            padding-left: 100px;
+            margin-right: -370px;
+            @include media-breakpoint-down(xl){
+                padding-left: 0;
+            }
+            @include media-breakpoint-down(lg){
+                margin-right: 0;
+                height: auto;
+            }
+        }
+        .image-box{
+            position: relative;
+            height: 100%;
+            .image{
+                margin-bottom: 0;
+                height: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .content-box{
+            position: absolute;
+            left: 0px;
+            top: 120px;
+            background-color: rgba(24,25,28,.90);
+            padding: 50px 60px 80px;
+            max-width: 370px;
+            @include media-breakpoint-down(md){
+                position: relative;
+                top: 0;
+                background-color: var(--theme-color2);
+                max-width: 100%;
+                padding: 50px 30px 80px;
+            }
+            .text{
+                font-size: 36px;
+                line-height: 50px;
+                color: var(--theme-color-light);
+                letter-spacing: -.04em;
+                margin-bottom: 110px;
+                @include media-breakpoint-down(lg) {
+                    margin-bottom: 50px;
+                }
+                @include media-breakpoint-down(md){
+                    font-size: 24px;
+                    line-height: 1.4em;
+                }
+            }
+            .caption{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: var(--theme-color1);
+                font-size: 18px;
+                line-height: 30px;
+                color: var(--theme-color2);
+                font-weight: 700;
+                padding: 25px 30px;
+                text-align: center;
+                letter-spacing: -.04em;
+                @include media-breakpoint-down(md){
+                    line-height: 1.2em;
+                }
+            }
+        }
+    }
+}

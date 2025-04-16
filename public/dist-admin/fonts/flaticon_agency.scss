@@ -1,0 +1,125 @@
+$flaticon_agency-font: "flaticon_agency";
+
+@font-face {
+    font-family: $flaticon_agency-font;
+    src: url("./flaticon_agency.ttf?0b4b906711066992faaaeb7db5908ac2") format("truetype"),
+url("./flaticon_agency.woff?0b4b906711066992faaaeb7db5908ac2") format("woff"),
+url("./flaticon_agency.woff2?0b4b906711066992faaaeb7db5908ac2") format("woff2"),
+url("./flaticon_agency.eot?0b4b906711066992faaaeb7db5908ac2#iefix") format("embedded-opentype"),
+url("./flaticon_agency.svg?0b4b906711066992faaaeb7db5908ac2#flaticon_agency") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_agency !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_agency-map: (
+    "web-development": "\f101",
+    "design": "\f102",
+    "megaphone": "\f103",
+    "targeted-marketing": "\f104",
+    "diplomat": "\f105",
+    "teaching": "\f106",
+    "laptop": "\f107",
+    "health-check": "\f108",
+    "bank": "\f109",
+    "success": "\f10a",
+    "recommend": "\f10b",
+    "marketing": "\f10c",
+    "job-promotion": "\f10d",
+    "completed-task": "\f10e",
+    "settings": "\f10f",
+    "rating": "\f110",
+    "group": "\f111",
+    "learning": "\f112",
+    "cloud": "\f113",
+    "digital-services": "\f114",
+    "graphic-design": "\f115",
+    "technology": "\f116",
+    "phone-call": "\f117",
+    "visitor": "\f118",
+    "promotion": "\f119",
+);
+
+.flaticon-web-development:before {
+    content: map-get($flaticon_agency-map, "web-development");
+}
+.flaticon-design:before {
+    content: map-get($flaticon_agency-map, "design");
+}
+.flaticon-megaphone:before {
+    content: map-get($flaticon_agency-map, "megaphone");
+}
+.flaticon-targeted-marketing:before {
+    content: map-get($flaticon_agency-map, "targeted-marketing");
+}
+.flaticon-diplomat:before {
+    content: map-get($flaticon_agency-map, "diplomat");
+}
+.flaticon-teaching:before {
+    content: map-get($flaticon_agency-map, "teaching");
+}
+.flaticon-laptop:before {
+    content: map-get($flaticon_agency-map, "laptop");
+}
+.flaticon-health-check:before {
+    content: map-get($flaticon_agency-map, "health-check");
+}
+.flaticon-bank:before {
+    content: map-get($flaticon_agency-map, "bank");
+}
+.flaticon-success:before {
+    content: map-get($flaticon_agency-map, "success");
+}
+.flaticon-recommend:before {
+    content: map-get($flaticon_agency-map, "recommend");
+}
+.flaticon-marketing:before {
+    content: map-get($flaticon_agency-map, "marketing");
+}
+.flaticon-job-promotion:before {
+    content: map-get($flaticon_agency-map, "job-promotion");
+}
+.flaticon-completed-task:before {
+    content: map-get($flaticon_agency-map, "completed-task");
+}
+.flaticon-settings:before {
+    content: map-get($flaticon_agency-map, "settings");
+}
+.flaticon-rating:before {
+    content: map-get($flaticon_agency-map, "rating");
+}
+.flaticon-group:before {
+    content: map-get($flaticon_agency-map, "group");
+}
+.flaticon-learning:before {
+    content: map-get($flaticon_agency-map, "learning");
+}
+.flaticon-cloud:before {
+    content: map-get($flaticon_agency-map, "cloud");
+}
+.flaticon-digital-services:before {
+    content: map-get($flaticon_agency-map, "digital-services");
+}
+.flaticon-graphic-design:before {
+    content: map-get($flaticon_agency-map, "graphic-design");
+}
+.flaticon-technology:before {
+    content: map-get($flaticon_agency-map, "technology");
+}
+.flaticon-phone-call:before {
+    content: map-get($flaticon_agency-map, "phone-call");
+}
+.flaticon-visitor:before {
+    content: map-get($flaticon_agency-map, "visitor");
+}
+.flaticon-promotion:before {
+    content: map-get($flaticon_agency-map, "promotion");
+}

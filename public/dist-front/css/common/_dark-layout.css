@@ -1,0 +1,33 @@
+/* -------- Dark Theme Styling ---------- */
+.dark-layout {
+  --sec-title-color: var(--theme-color-light);
+}
+.dark-layout .sticky-header .main-menu .navigation > li > a,
+.dark-layout h1, .dark-layout h2, .dark-layout h3, .dark-layout h4, .dark-layout h5, .dark-layout h6 {
+  color: var(--theme-color-light);
+}
+.dark-layout .preloader {
+  background-color: var(--theme-color-dark);
+}
+.dark-layout .preloader:after {
+  background-image: url(../images/logo.png);
+}
+.dark-layout .sticky-header {
+  background-color: var(--theme-color-dark);
+}
+.dark-layout .hidden-bar .upper-box {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.dark-layout .hidden-bar .social-links {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.dark-layout .hidden-bar .social-links li {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.dark-layout.style-two {
+  background-image: url(../images/icons/dark-bg2.jpg);
+}
+.dark-layout.style-three {
+  background-image: none;
+  background-color: #191919;
+}

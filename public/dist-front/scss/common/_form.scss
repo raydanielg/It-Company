@@ -1,0 +1,33 @@
+
+/*=== Default Form ===*/
+
+@function form-control-height() {
+  @return calc(2.25rem + 27px);
+}
+.form-control, .input-text {
+    height: form-control-height();
+    padding: 14px 30px;
+    outline: 0;
+    background-color: #f4f5f8;
+    border: 1px solid #f4f5f8;
+    color: #686a6f;
+    font-size: 0.9rem;
+    width: 100%;
+    &::placeholder {
+        color: #686a6f;
+        opacity: 1;
+    }
+    &:-ms-input-placeholder {
+        color: #686a6f;
+    }
+    &::-ms-input-placeholder {
+        color: #686a6f;
+    }
+}
+textarea {
+    &.form-control {
+        height: auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}

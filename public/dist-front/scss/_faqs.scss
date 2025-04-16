@@ -1,0 +1,191 @@
+/*** 
+
+====================================================================
+		FAQ's Sectiom
+====================================================================
+
+***/
+
+.faqs-section {
+	position: relative;
+	padding: 120px 0 70px;
+    .faq-column{
+		margin-bottom: 50px;
+    }
+
+	.content-column{
+		@include media-breakpoint-down(lg){
+			order: 3;
+		}
+		.image-box{
+			position: relative;
+			padding-right: 45px;
+			margin-bottom: 50px;
+			@include media-breakpoint-down(xl){
+				padding-right: 0;
+			}
+			.image{
+				margin-bottom: 0;
+				img{
+					width: 100%;
+				}
+			}
+		}
+		.exp-box{
+			position: relative;
+			text-align: center;
+			.count{
+				display: block;
+				font-size: 150px;
+				line-height: 1em;
+				font-weight: 600;
+				color: var(--theme-color2);
+				margin-top: -95px;
+				margin-bottom: 5px;
+				text-shadow:
+					3px 3px 0 var(--theme-color1),
+					-1px -1px 0 var(--theme-color1),  
+					1px -1px 0 var(--theme-color1),
+					-1px 1px 0 var(--theme-color1),
+					1px 1px 0 var(--theme-color1);
+			}
+			.title{
+				font-size: 30px;
+				font-weight: 300;
+			}
+		}
+	}
+}
+
+// Faq Block
+.faq-block {
+	position: relative;
+	margin-bottom: 42px;
+	.inner-box {
+		position: relative;
+		padding-right: 40px;
+		@include media-breakpoint-down(xl){
+			padding-right: 0;
+		}
+		@include media-breakpoint-down(sm){
+			text-align: center;
+		}
+		&:hover {
+			.icon {
+				background-color: var(--theme-color2);
+				color: var(--theme-color-light);
+			}
+		}
+	}
+	.title-box{
+		position: relative;
+		padding-left: 72px;
+		margin-bottom: 10px;
+		min-height: 52px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		@include media-breakpoint-down(sm){
+			padding-left: 0;
+			margin-bottom: 0;
+			text-align: center;
+		}
+		.title{
+			margin-bottom: 0;
+			line-height: 1.2em
+		}
+	}
+	.icon {
+		@include absolute;
+		@include flex-center;
+		height: 52px;
+		width: 52px;
+		color: var(--theme-color2);
+		background-color: var(--bg-theme-color1);
+		border-radius: 50%;
+		font-size: 14px;
+		transition: all 300ms ease;
+		@include media-breakpoint-down(sm){
+			position: relative;
+			display: inline-flex;
+			margin: 0 auto 15px;
+		}
+	}
+	.text {
+		font-size: 16px;
+		line-height: 30px;
+		color: var(--theme-color4);
+	}
+}
+
+
+.accordion-box {
+	position: relative;
+	.block {
+		position: relative;
+        background-color: #fff;
+		border: 1px solid transparent;
+		&:last-child{margin-bottom: 0;}
+        margin-bottom: 10px;
+		&.active-block{
+			border: 1px solid #e1e2e7;
+		}
+		.acc-btn {
+			position: relative;
+			font-size: 18px;
+			line-height: 25px;
+			color: #000;
+			font-weight: 600;
+			cursor: pointer;
+            @include title-font;
+			background-color: #f2f3f6;
+			padding: 25px 40px;
+			padding-right: 70px;
+			letter-spacing: -.04em;
+			transition: all 500ms ease;
+			@include media-breakpoint-down(sm){
+				padding: 25px 20px;
+				padding-right: 50px;
+			}
+			.icon {
+				position: absolute;
+				right: 0px;
+				top: 0px;
+				height: 75px;
+                width: 75px;
+				font-size: 16px;
+				line-height: 75px;
+				color: var(--theme-color2);
+				text-align: center;
+				transition: all 500ms ease;
+			}
+		}
+		.acc-btn.active {
+			color: var(--theme-color1);
+			background-color: transparent;
+			.icon {
+				color: var(--theme-color1);
+				&:before {
+					content: "\f068";
+				}
+			}
+		}
+		.acc-content {
+			position: relative;
+			display: none;
+			.content {
+				position: relative;
+				padding: 0px 40px 25px;
+				@include media-breakpoint-down(sm){
+					padding: 0 20px 25px;
+				}
+				.text {
+					margin-bottom: 0;
+				}
+			}
+		}
+		.acc-content.current {
+			display: block;
+		}
+	}
+}

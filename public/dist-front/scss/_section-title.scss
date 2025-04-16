@@ -1,0 +1,98 @@
+/*** 
+
+====================================================================
+Section Title
+====================================================================
+
+***/
+
+.sec-title {
+    position: relative;
+    margin-bottom: 50px;
+    .sub-title {
+        position: relative;
+        display: block;
+        font-size: var(--sec-title-subtitle-font-size);
+        line-height: var(--sec-title-subtitle-line-height);
+        font-weight: var(--sec-title-subtitle-font-weight);
+        font-family: var(--sec-title-subtitle-font-family);
+        color: var(--sec-title-subtitle-color);
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        margin-bottom: 5px;
+    }
+    h1{
+        position: relative;
+        font-size: var(--h1-font-size);
+        line-height: 1em;
+        letter-spacing: -.08em;
+        margin-bottom: 0;
+        @include media-breakpoint-down(xl) {
+            font-size: 84px;
+        }
+        @include media-breakpoint-down(lg){
+            font-size: 72px;
+        }
+        @include media-breakpoint-down(md) {
+            font-size: 68px;
+        }
+        @include media-breakpoint-down(sm) {
+            font-size: 54px;
+        }
+    }
+    
+    h2 {
+        position: relative;
+        font-size: var(--sec-title-font-size);
+        color: var(--sec-title-color);
+        font-family: var(--sec-title-font-family);
+        font-weight: var(--sec-title-font-weight);
+        letter-spacing: -.04em;
+        line-height: 1.2em;
+        margin-bottom: 0;
+        z-index: 0;
+        @include media-breakpoint-down(sm){
+            font-size: 36px;
+            br{display: none;}
+        }
+        &:before{
+            position: absolute;
+            left: 5px;
+            top: 32px;
+            height: 30px;
+            width: 38px;
+            border-radius: 5px 5px 5px 0;
+            background-color: var(--bg-theme-color1);
+            transform: skew(-15deg);
+            z-index: -1;
+            content: "";
+            @include media-breakpoint-down(sm){
+                height: 20px;
+                width: 28px;
+                top: 25px;
+            }
+        }
+    }
+    .text {
+        margin-top: 30px;
+    }
+
+    &.light{
+        .text{
+            color: #75767a;
+        }
+        h2,
+        h1{
+            color: #fff;
+        }
+    }
+
+    &.text-center{
+        h2{
+            &:before{
+                left: 50%;
+                margin-left: -15px;
+            }
+        }
+    }
+}

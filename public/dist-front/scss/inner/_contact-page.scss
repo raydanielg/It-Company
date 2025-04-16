@@ -1,0 +1,75 @@
+/***
+
+====================================================================
+        Contact
+====================================================================
+
+***/
+.contact-details__info {
+  position: relative;
+  display: block;
+  margin-top: 41px;
+  li {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    .icon {
+      height: 80px;
+      width: 80px;
+      background-color: var(--theme-color2);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-transition: all 500ms ease;
+      transition: all 500ms ease;
+      span {
+        color: var(--text-color-bg-theme-color2);
+        font-size: 25px;
+        -webkit-transition: all 500ms ease;
+        transition: all 500ms ease;
+      }
+    }
+    &:hover {
+      .icon {
+        background-color: var(--theme-color1);
+        span {
+          color: var(--text-color-bg-theme-color1);
+        }
+      }
+      .text {
+        a {
+          span {
+          }
+        }
+      }
+    }
+    .text {
+      margin-left: 30px;
+      p {
+        font-size: 14px;
+        line-height: 24px;
+      }
+      a {
+        font-size: 18px;
+        -webkit-transition: all 500ms ease;
+        transition: all 500ms ease;
+      }
+      span {
+        font-size: 20px;
+      }
+    }
+  }
+  li+li {
+    margin-top: 30px;
+  }
+}

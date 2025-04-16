@@ -1,0 +1,475 @@
+:root {
+  --dark-color1: #171717;
+  --dark-color2: #222020;
+  --dark-color3: #2b242b;
+}
+
+body,
+.header-style-two .header-top,
+.sticky-header,
+.team-block .info-box,
+.project-block-two .content-box .cat,
+.about-section-four .image-column .exp-box:before,
+.blockquote-style-one,
+.why-choose-us-two .info-box .icon,
+.page-wrapper {
+  background-color: var(--dark-color1);
+}
+
+.testimonial-section .bg:before {
+  opacity: 0.98;
+}
+
+.team-block .image-box .social-links,
+.feature-block .inner-box,
+.about-section .content-column .founded-year,
+.service-block .inner-box,
+.testimonial-block .content-box,
+.default-navs .owl-next,
+.default-navs .owl-prev,
+.team-block .info-box,
+.news-block .content-box,
+.subscribe-form .form-group input[type=text],
+.subscribe-form .form-group input[type=email],
+.testimonial-block-two .content-box,
+.feature-block-two .inner-box,
+.project-block-two .inner-box,
+.about-block .inner-box,
+.accordion-box .block,
+.service-block-two .inner-box .hover-content,
+.about-section-four:after,
+.service-block-three .inner-box,
+.feature-block-three .inner-box,
+.fun-fact-section-two .fact-counter,
+.about-section-four .image-column .exp-box,
+.about-us-tabs .tab-btns .tab-btn.active-btn,
+.feature-block-four .inner-box,
+.about-section-five .content-column .inner-column,
+.service-block-four .inner-box,
+.work-block .icon-box .count,
+.news-block .content-box .read-more,
+.social-icon-two li a,
+.team-block-two .info-box:before,
+.testimonial-section-two .title-column .sec-title h2:before,
+.about-section-two .image-column .exp-box .inner,
+.contact-section .outer-box .contact-form,
+.contact-section .outer-box .sec-title h2:before,
+.why-choose-us .info-outer,
+.why-choose-us-two,
+.accordion-box .block .acc-btn,
+.about-section .content-column .info-box .icon:after,
+.service-block .inner-box .content-box,
+.client-block a:hover,
+.faq-block .inner-box:hover .icon,
+.default-navs .owl-next:hover, .default-navs .owl-prev:hover,
+.service-block .image:before {
+  background-color: var(--dark-color2);
+}
+
+.team-block .info-box:before {
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--dark-color2)), to(transparent));
+  background: linear-gradient(to top, var(--dark-color2), transparent);
+}
+
+.team-block .image-box .image {
+  background: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(var(--dark-color2)), to(var(--dark-color2)));
+  background: linear-gradient(to top, transparent, var(--dark-color2), var(--dark-color2));
+}
+
+.team-block .image-box .image:before {
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--dark-color2)), color-stop(var(--dark-color2)), to(var(--theme-color1)));
+  background: linear-gradient(to top, var(--dark-color2), var(--dark-color2), var(--theme-color1));
+}
+
+.feature-block .inner-box .image-box .image::before {
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--dark-color2)), to(transparent));
+  background: linear-gradient(to top, var(--dark-color2), transparent);
+}
+
+.testimonial-block-two .inner-box:hover .content-box {
+  background-color: var(--dark-color3);
+}
+
+.testimonial-block .content-box:after {
+  border-top: 44px solid var(--dark-color2);
+}
+
+.list-style-two li {
+  color: #74707c;
+}
+
+.features-section .tabs-column .tab-btns .tab-btn.active-btn:before {
+  background-color: var(--dark-color2);
+}
+
+.clients-section .outer-box {
+  border-top: 1px solid var(--dark-color2);
+}
+
+.about-section .content-column .info-box {
+  border-bottom: 1px solid var(--dark-color2);
+}
+
+.about-section .content-column .other-info .list-style-two {
+  border-left: 1px solid var(--dark-color2);
+}
+
+.quote-section .content-column .other-info {
+  border-top: 1px solid var(--dark-color1);
+}
+
+.counter-block .inner:before {
+  border-right: 1px solid var(--dark-color1);
+}
+
+.feature-block .inner-box .content-box .icon-box {
+  border: 12px solid var(--dark-color2);
+}
+
+.why-choose-us .outer-box .float-image:before {
+  border: 10px solid var(--dark-color2);
+}
+
+.header-style-two .main-box .outer-box .info-btn .icon {
+  padding-right: 20px;
+}
+
+.about-section-five .content-column .inner-column {
+  padding: 50px;
+}
+
+.about-section .image-column .image-2 {
+  border: 10px solid var(--dark-color1);
+}
+
+.about-section-five .image-column .image-2,
+.about-section-two .image-column .image-2 {
+  border: 20px solid var(--dark-color2);
+}
+
+.features-section .tabs-column .tab-btns .tab-btn.active-btn:after {
+  border-left: 20px solid var(--dark-color2);
+}
+
+.testimonial-block-two .content-box:before {
+  border-top: 20px solid #222020;
+}
+
+.project-section-two .project-block .content-box {
+  border-bottom-color: var(--dark-color2);
+}
+
+.client-block {
+  border-right: 1px solid var(--dark-color1);
+}
+
+.pricing-block.style-two .inner-box {
+  background-color: var(--dark-color3);
+}
+
+.btn-style-three,
+.work-tabs .tab-buttons .tab-btn {
+  background-color: #000;
+}
+
+.about-section-six .image-column .image-box:before {
+  background-color: var(--bg-theme-color2);
+}
+
+.blockquote-one {
+  background-color: #323232;
+}
+
+.about-section .content-column .info-btn i {
+  background-color: #282a2e;
+}
+
+.service-block .read-more i {
+  color: #fff;
+  -webkit-box-shadow: 0 10px 30px rgba(255, 255, 255, 0.12);
+          box-shadow: 0 10px 30px rgba(255, 255, 255, 0.12);
+}
+
+.about-section-two .content-column .inner-column .list-style-two li {
+  color: #6a6a6a;
+}
+
+.feature-block .inner-box .content-box .title,
+.about-section .content-column .info-box .info-text,
+.team-block .image-box .social-links a,
+.about-section .content-column .author-info .name {
+  color: #fff;
+}
+
+.team-block-two .social-links a:hover,
+.about-section .content-column .author-info .designation,
+.about-section .content-column .info-box:hover .title,
+.testimonial-block .content-box .text {
+  color: #bdbdbd;
+}
+
+.service-block .inner-box {
+  border-color: var(--dark-color1);
+}
+
+.accordion-box.style-two .block {
+  border-color: var(--dark-color3);
+}
+
+.fun-fact-section .title-column .inner-column {
+  border-color: rgba(70, 70, 70, 0.3);
+}
+
+.team-block .image-box .social-links:before {
+  border-bottom: 5px solid var(--dark-color2);
+}
+
+.work-block .icon-box:before {
+  border-right: 10px solid #464548;
+  border-bottom: 10px solid #464548;
+}
+
+.pricing-block.style-two .price-box {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.testimonial-block .content-box {
+  border-color: #232331;
+}
+
+.news-block .content-box {
+  border-color: #292738;
+}
+
+.testimonial-block .content-box:before {
+  border-color: #292738;
+}
+
+.default-tabs .tab-buttons li.active-btn,
+.service-block-two .inner-box {
+  border-color: #181616;
+}
+
+.about-section .content-column .info-box:hover .icon,
+.service-block-two .inner-box .hover-content .icon,
+.about-section-two .content-column .float-text {
+  color: #3a3a3a;
+}
+
+.blockquote-one {
+  color: #8d8d8d;
+}
+
+.sticky-header .main-menu .navigation > li > a,
+.sticky-header .main-menu .navigation > li.current > a,
+.sticky-header .main-menu .navigation > li:hover > a,
+h6,
+strong,
+.title a,
+.testimonial-block .info-box .name,
+.default-navs .owl-next, .default-navs .owl-prev,
+.header-style-two .main-box .main-menu .navigation > li > a,
+.team-block .info-box .name,
+.accordion-box .block .acc-btn .icon,
+.feature-block-three .title,
+.sortable-masonry .filter-tabs .filter.active,
+.about-us-tabs .tab-btns .tab-btn.active-btn,
+.skills .skill-item .skill-header .skill-title,
+.blockquote-style-one,
+.team-block-two .info-box .name,
+.why-choose-us-two .info-box .title,
+.about-section-two .image-column .exp-box .count,
+.about-section-two .info-box .title,
+.why-choose-us .info-box .title,
+.accordion-box .block .acc-btn,
+.service-block .inner-box .content-box .title,
+.sec-title h2 {
+  color: #fff;
+}
+
+.features-section .icon-object-1 {
+  opacity: 0.3;
+}
+
+.service-block-three .inner-box::before {
+  opacity: 0.6;
+}
+
+.about-section .content-column .author-info .thumb img,
+.accordion-box .block.active-block,
+.testimonial-section-two .sponsors-outer,
+.about-section .content-column .founded-year:before,
+.faq-block {
+  border-color: #505050;
+}
+
+.feature-block .content {
+  border-color: #404040;
+}
+
+.counter-block .counter-title {
+  color: #a8adb3;
+}
+
+.news-block .content-box .read-more {
+  border-color: #404040;
+}
+
+.call-to-action {
+  border-color: #383838;
+}
+
+.pie-graph {
+  border-color: #404040;
+}
+
+.feature-block .count {
+  -webkit-text-stroke-color: #fff;
+}
+
+.counter-block-two .count-box {
+  -webkit-text-stroke-color: var(--bg-theme-color2);
+}
+
+.counter-block-two .inner:hover .count-text {
+  color: var(--bg-theme-color2);
+}
+
+.header-style-two {
+  background-color: unset;
+}
+
+.counter-block .inner {
+  background-image: unset;
+}
+
+.contact-section:before {
+  opacity: 0.1;
+}
+
+.faqs-section-two:after {
+  opacity: 0.5;
+}
+
+.bg-pattern-3 {
+  opacity: -7;
+}
+
+.bg-pattern-2 {
+  background-image: url(../images/icons/pattern-2-dark.jpg);
+}
+
+.testimonial-section .bg-lines {
+  background-image: url(../images/icons/lines2-dark.png);
+}
+
+.about-section-three:before {
+  opacity: 0.21;
+}
+
+.clients-carousel .slide-item img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.clients-section .slide-item a:hover {
+  background-color: inherit;
+}
+
+.about-section:before {
+  background-image: url(../images/icons/gradient-dark.jpg);
+}
+
+.about-section .image-column .image-box .icon-shpaes {
+  background-image: url(../images/icons/shapes-dark.png);
+}
+
+.icon-plane-3 {
+  background-image: url(../images/icons/icon-plane-3-dark.png);
+}
+
+.bg-pattern-1 {
+  background-image: url(../images/icons/pattern-1-dark.jpg);
+}
+
+.contact-form.light:before {
+  background-image: url(../images/icons/shape-5-dark.png);
+}
+
+.icon-plane-2 {
+  background-image: url(../images/icons/icon-plane-2-dark.png);
+}
+
+.about-section .outer-box::after {
+  background-image: url(../images/icons/dots-dark.png);
+}
+
+.fun-fact-section .bg-lines {
+  background-image: url(../images/icons/lines-dark.png);
+}
+
+.counter-block .icon-box {
+  background-image: url(../images/icons/shape2-dark.png);
+}
+
+.bg-pattern-7 {
+  background-image: url(../images/icons/pattern-7-dark.jpg);
+}
+
+.counter-block-two .icon-box {
+  background-image: url(../images/icons/shape7-dark.png);
+}
+
+.bg-pattern-8 {
+  background-image: url(../images/icons/pattern-8-dark.jpg);
+}
+
+.feature-block-two .inner-box:before {
+  background-image: url(../images/icons/shape4-dark.png);
+}
+
+.bg-pattern-11 {
+  background-image: url(../images/icons/pattern-11-dark.jpg);
+}
+
+.bg-pattern-13 {
+  background-image: url(../images/icons/pattern-13-dark.jpg);
+}
+
+.service-block-four .inner-box .icon:after {
+  background-image: url(../images/icons/shape8-dark.png);
+}
+
+.work-block .icon-box {
+  background-image: url(../images/icons/step-border-dark.png);
+}
+
+.work-block .icon-box .icon {
+  background-image: url(../images/icons/step-dark.png);
+}
+
+.news-section-two .bg-lines {
+  background-image: url(../images/icons/lines4-dark.png);
+}
+
+.contact-form .form-group textarea {
+  background-color: #0a090f;
+}
+.contact-form .form-group input:not([type=submit]) {
+  background-color: #0a090f;
+}
+
+.client-block.dark-style img {
+  display: inline-block !important;
+  width: auto !important;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background: unset;
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+  opacity: 0.4;
+}
+
+.team-block .inner-box:after {
+  display: none;
+}

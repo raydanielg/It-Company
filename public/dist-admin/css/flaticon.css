@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "flaticon_agency";
+    src: url("../fonts/flaticon_agency.ttf?0b4b906711066992faaaeb7db5908ac2") format("truetype"),
+    url("../fonts/flaticon_agency.woff?0b4b906711066992faaaeb7db5908ac2") format("woff"),
+    url("../fonts/flaticon_agency.woff2?0b4b906711066992faaaeb7db5908ac2") format("woff2"),
+    url("../fonts/flaticon_agency.eot?0b4b906711066992faaaeb7db5908ac2#iefix") format("embedded-opentype"),
+    url("../fonts/flaticon_agency.svg?0b4b906711066992faaaeb7db5908ac2#flaticon_agency") format("svg");
+}
+
+i[class^="flaticon-"]:before, 
+i[class*=" flaticon-"]:before {
+    font-family: flaticon_agency !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-web-development:before {
+    content: "\f101";
+}
+.flaticon-design:before {
+    content: "\f102";
+}
+.flaticon-megaphone:before {
+    content: "\f103";
+}
+.flaticon-targeted-marketing:before {
+    content: "\f104";
+}
+.flaticon-diplomat:before {
+    content: "\f105";
+}
+.flaticon-teaching:before {
+    content: "\f106";
+}
+.flaticon-laptop:before {
+    content: "\f107";
+}
+.flaticon-health-check:before {
+    content: "\f108";
+}
+.flaticon-bank:before {
+    content: "\f109";
+}
+.flaticon-success:before {
+    content: "\f10a";
+}
+.flaticon-recommend:before {
+    content: "\f10b";
+}
+.flaticon-marketing:before {
+    content: "\f10c";
+}
+.flaticon-job-promotion:before {
+    content: "\f10d";
+}
+.flaticon-completed-task:before {
+    content: "\f10e";
+}
+.flaticon-settings:before {
+    content: "\f10f";
+}
+.flaticon-rating:before {
+    content: "\f110";
+}
+.flaticon-group:before {
+    content: "\f111";
+}
+.flaticon-learning:before {
+    content: "\f112";
+}
+.flaticon-cloud:before {
+    content: "\f113";
+}
+.flaticon-digital-services:before {
+    content: "\f114";
+}
+.flaticon-graphic-design:before {
+    content: "\f115";
+}
+.flaticon-technology:before {
+    content: "\f116";
+}
+.flaticon-phone-call:before {
+    content: "\f117";
+}
+.flaticon-visitor:before {
+    content: "\f118";
+}
+.flaticon-promotion:before {
+    content: "\f119";
+}

@@ -1,0 +1,392 @@
+.header-style-two .header-top,
+.header-style-two .header-lower,
+.moblie-search-active .search-popup .search-inner,
+.why-choose-us-home5,
+.projects-section,
+.why-choose-us-two,
+.contact-section-two,
+.home4-projects-section,
+.team-details {
+    direction: rtl!important;
+    text-align: right!important;
+}
+
+.list-style-one li {
+    margin-left: 20px;
+    margin-right: 0;
+}
+.list-style-one li i {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.header-top .useful-links li {
+    padding-left: 0px;
+    margin-left: 0px;
+    padding-right: 15px;
+    margin-right: 15px;
+}
+.header-top .useful-links li::before {
+    left: auto;
+    right: -3px;
+}
+.header-top .top-right .social-icon-one {
+    margin-right: 20px;
+    margin-left: 0;
+}
+.social-icon-one li {
+    margin-left: 0px;
+    margin-right: 27px;
+}
+@media only screen and (max-width: 1699px) {
+    .header-style-two .main-box .main-menu .navigation > li {
+        margin-right: 0px!important;
+        margin-left: 42px!important;
+    }
+}
+.main-menu .navigation > li {
+    float: right;
+}
+.main-menu .navigation > li > ul > li > a {
+    text-align: right;
+}
+.main-menu .navigation > li > ul {
+    left: auto;
+    right: 0;
+}
+.header-style-two .main-box .outer-box .search-btn {
+    padding-right: 0;
+    padding-left: 40px;
+    border-left: 1px solid rgba(255, 255, 255, 0.06);
+    border-right: 0;
+    margin-left: 40px;
+}
+.search-popup .form-group button {
+    left: 5px;
+    right: auto;
+}
+.sec-title h2::before {
+    left: auto;
+    right: auto;
+}
+.about-section .content-column .info-box .icon {
+    left: auto;
+    right: 0;
+}
+.about-section .content-column .info-box .icon::after {
+    right: 20px;
+    left: auto;
+}
+.about-section .content-column .info-box {
+    padding-right: 105px;
+    padding-left: 0;
+}
+.service-block-new-1 .content-box .read-more i {
+    margin-left: 0;
+    margin-right: 10px;
+}
+.service-block-new-1 .image-box .icon-box {
+    left: auto;
+    right: 25px;
+}
+.contact-section .outer-box .sec-title h2::before {
+    left: auto;
+    right: 0;
+}
+.contact-section .outer-box .image {
+    left: 5px;
+    right: auto;
+}
+.news-block .content-box .date {
+    right: 30px;
+    left: auto;
+}
+.news-block .content-box .post-info li i {
+    margin-left: 10px;
+    margin-right: 0;
+}
+.news-block .content-box .post-info li {
+    margin-left: 15px;
+    margin-right: 0;
+}
+.feature-block-two .icon::after {
+    right: 100%;
+    left: auto;
+    margin-right: -20px;
+    margin-left: 0;
+}
+.testimonial-block-home5-v2 .content-box::before {
+    right: 0;
+    left: auto;
+    border-top: 20px solid #ffffff;
+    border-right: 55px solid transparent;
+    border-left: 0;
+}
+.contact-info-block .inner {
+    padding-left: 0!important;
+    padding-right: 110px;
+}
+.contact-info-block .inner .icon {
+    left: auto;
+    right: 0;
+}
+.why-choose-us-home5 .image-column .inner-column {
+    margin-right: -375px;
+    margin-left: 0;
+    padding-left: 100px;
+    padding-right: 0;
+}
+.service-block-two .inner-box .content-box .icon {
+    right: 0;
+    left: auto;
+}
+.service-block-two .inner-box .content-box {
+    padding-right: 100px;
+    padding-left: 0;
+}
+.skills .skill-item .skill-bar .bar-inner .skill-percentage {
+    left: 0;
+    right: auto;
+}
+.skills .skill-item .skill-bar .bar-inner .bar {
+    right: 0;
+    left: auto;
+}
+
+.about-section-two .image-column .image-2 {
+    left: 45px;
+    right: auto;
+}
+.overlay-anim::after {
+    right: 0;
+    left: auto;
+}
+.about-section-two .image-column .exp-box {
+    right: 220px;
+    left: auto;
+}
+.why-choose-us-two .image-column .inner-column {
+    padding-left: 0;
+    padding-right: 100px;
+    margin-right: 0;
+    margin-left: -370px;
+}
+.why-choose-us-two .image-column .content-box {
+    right: 0;
+    left: auto;
+}
+.why-choose-us-two .image-column .content-box .caption {
+    left: auto;
+    right: 0;
+}
+.why-choose-us-two .info-box .icon {
+    right: 0;
+    left: auto;
+}
+.why-choose-us-two .info-box .title-box {
+    padding-right: 90px;
+    padding-left: 0;
+}
+.contact-section-two .image-box {
+    right: auto;
+    left: 0;
+    padding-left: 0;
+    padding-right: 130px;
+}
+.contact-section-two .image-box .image-overlay {
+    display: none;
+}
+
+.scroll-to-top {
+    right: auto;
+    left: 20px;
+}
+.service-block-home4 .count {
+    left: -40px;
+    right: auto;
+}
+.service-block-home4 em {
+    right: 60px;
+    left: auto;
+}
+.service-block-home4 .inner-box::after {
+    right: 0;
+    left: auto;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    border-radius: 0;
+}
+.offer-section-home4 .image-column .image-box {
+    margin-left: -375px;
+    margin-right: 0;
+}
+.offer-section-home4 .image-column .caption-box {
+    right: 0;
+    left: auto;
+}
+.offer-section-home4 .content-column .info-box .icon {
+    right: 0;
+    left: auto;
+}
+.offer-section-home4 .content-column .info-box {
+    padding-right: 85px;
+    padding-left: 0;
+}
+.list-style-two li {
+    padding-right: 30px;
+    padding-left: 0;
+}
+.list-style-two li i {
+    right: 0;
+    left: auto;
+}
+.features-section-three .info-list li {
+    padding-left: 100px;
+    padding-right: 30px;
+}
+.features-section-three .info-list li::before {
+    left: 30px;
+    right: auto;
+}
+.call-to-action-two .info-box {
+    text-align: left;
+}
+.team-block-home4 .share-icon {
+    left: 2px;
+    right: auto;
+}
+.team-block-home4 .social-links {
+    left: 2px;
+    right: auto;
+}
+.about-section-two .info-box .icon {
+    margin-right: 0;
+    margin-left: 5px;
+}
+.page-breadcrumb li:last-child {
+    padding-right: 0px;
+    margin-right: 0px;
+}
+.about-section .content-column .other-info {
+    padding-left: 230px;
+    padding-right: 0;
+}
+.about-section .content-column .author-info {
+    padding-right: 110px;
+    padding-left: 0;
+}
+.about-section .content-column .other-info .theme-btn {
+    left: 0;
+    right: auto;
+}
+.about-section .content-column .author-info .thumb {
+    right: 0;
+    left: auto;
+}
+.about-section .image-column .exp-box {
+    left: 20px;
+}
+.team-details__top-left {
+    margin-left: 20px;
+    margin-right: 0;
+}
+.team-details__top-right {
+    margin-right: 50px;
+    margin-left: 0;
+}
+.team-details__social a + a {
+    margin-right: 10px;
+    margin-left: 0;
+}
+.team-details__progress .count-text {
+    left: 0;
+    right: auto;
+}
+.testimonial-block .info-box .thumb {
+    right: 0;
+    left: auto;
+}
+.testimonial-block .info-box {
+    margin-left: 0px;
+    margin-right: 10px;
+    padding-left: 0px;
+    padding-right: 115px;
+}
+.testimonial-block .content-box::after {
+    right: 40px;
+    left: auto;
+}
+.testimonial-block .content-box::before {
+    right: 0;
+    left: auto;
+}
+.accordion-box .block .acc-btn .icon {
+    left: 0;
+    right: auto;
+}
+.page-breadcrumb li {
+    margin-left: 12px;
+    padding-left: 13px;
+    margin-right: 0;
+    padding-right: 0;
+}
+.page-breadcrumb li::after {
+    left: -6px;
+    right: auto;
+}
+.page-breadcrumb li::after {
+    content: "\f104";
+}
+.sidebar-service-list li a i {
+    left: 20px;
+    right: auto;
+}
+.service-sidebar .service-sidebar-single-btn .theme-btn span::before {
+    padding-left: 25px;
+    padding-right: 0;
+}
+.btn-style-one::before {
+    right: 0;
+    left: auto;
+}
+.project-details__pagination li.previous i {
+    margin-right: 20px;
+    margin-left: auto;
+}
+.project-details__pagination li.next i {
+    margin-left: 20px;
+    margin-right: 0;
+}
+.sidebar__search-form button[type="submit"] {
+    left: 0;
+    right: auto;
+}
+.sidebar__post .sidebar__post-list .sidebar__post-content-meta i {
+    padding-left: 3px;
+    padding-right: 0;
+}
+.sidebar__post .sidebar__post-list .sidebar__post-image {
+    margin-left: 20px;
+    margin-right: 0;
+}
+.blog-details__date {
+    left: 0;
+    right: auto;
+}
+.contact-details__info li .text {
+    margin-right: 30px;
+    margin-left: 0;
+}
+
+.main-header .info-btn {
+    padding-right: 44px;
+    padding-left: 0;
+    text-align: right;
+}
+.main-header .info-btn .icon {
+    right: 0;
+    left: auto;
+    margin-left: 20px;
+    padding-left: 20px;
+    margin-right: 0;
+    padding-right: 0;
+}

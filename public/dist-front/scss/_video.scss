@@ -1,0 +1,95 @@
+/*** 
+
+====================================================================
+    Video Section
+====================================================================
+
+***/
+
+.video-section{
+    position: relative;
+    padding: 120px 0 120px;
+    text-align: center;
+    &.pull-down{
+        padding-bottom: 225px;
+        margin-bottom: -120px;
+    }
+    .play-btn{
+        position: relative;
+        margin-bottom: 50px;
+    }
+    .sec-title{
+        margin-bottom: 0;
+        h2{
+            &:before{display: none;}
+            @include media-breakpoint-down(lg){
+                br{display: none;}
+            }
+            .selected{
+                position: relative;
+                &:before{
+                    position: absolute;
+                    left: -20px;
+                    top: 5px;
+                    height: 71px;
+                    width: 275px;
+                    background-image: url(../images/icons/arrow-circle.png);
+                    z-index: -1;
+                    content: "";
+                    @include media-breakpoint-down(md){
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .video-box{
+        position: relative;
+        padding: 170px 30px 180px;
+        text-align: center;
+        z-index: 3;
+        .bg-overlay{
+            @include overlay;
+            @include background;
+            background-image: url(../images/icons/overlay.png);
+        }
+        .watch-video-text{
+            position: relative;
+            display: inline-block;
+            margin-bottom: 0;
+            max-width: 100%;
+        }
+
+        .play-btn{
+            position: absolute;
+            right: 165px;
+            bottom: 100px;
+            margin-bottom: 0;
+            @include media-breakpoint-down(xl){
+                position: relative;
+                display: block;
+                right: 0;
+                bottom: 0;
+                margin-top: 50px;
+                text-align: center;
+            }
+            &:hover{
+                .icon{
+                    background-color: var(--theme-color-light);
+                    color: var(--theme-color2);
+                }
+            }
+            .icon{
+                display: inline-flex;
+                height: 90px;
+                width: 90px;
+                background-color: var(--theme-color2);
+                color: var(--theme-color-light);
+                font-size: 20px;
+            }
+        }
+
+    }
+    
+}
